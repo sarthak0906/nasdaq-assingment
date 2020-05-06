@@ -1,12 +1,12 @@
 import React, { Component, useState } from 'react';
 import { render } from 'react-dom';
-import Former from './Form.js';
-import './style.css';
-import Table from './Table';
-import * as XLK16 from './XLK-16.json';
-import * as XLK17 from './XLK-17.json';
-import * as FTEC17 from './FTEC-17.json';
-import * as FTEC16 from './FTEC-16.json';
+import Former from './Component/Form.js';
+import './static/css/style.css';
+import Table from './Component/Table';
+import * as XLK16 from './Data/XLK-16.json';
+import * as XLK17 from './Data/XLK-17.json';
+import * as FTEC17 from './Data/FTEC-17.json';
+import * as FTEC16 from './Data/FTEC-16.json';
 
 const App = () => {
   const [startDate, setDate] = useState(new Date(2020, 3, 16));

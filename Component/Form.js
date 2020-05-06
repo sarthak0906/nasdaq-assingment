@@ -7,7 +7,7 @@ import DatePicker from "react-datepicker";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import './NavStyle.css';
+import '../static/css/NavStyle.css';
 import "react-datepicker/dist/react-datepicker.css";
  
 // CSS Modules, react-datepicker-cssmodules.css

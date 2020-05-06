@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table'
-import './TableStyle.css'
+import '../static/css/TableStyle.css'
 
 export default class Table extends React.Component {    
   constructor(props){
