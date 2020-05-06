@@ -1,6 +1,5 @@
 import React, { Component, useState } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import Former from './Form.js';
 import './style.css';
 import Table from './Table';
@@ -18,7 +17,7 @@ const App = () => {
     setFile( stock + "-" + date);
   }
 
-  var Table;
+  var table = RenderTable(file);
 
   return (
     <div className="Container">
@@ -30,7 +29,7 @@ const App = () => {
       <div className="TableContainer"> 
         {
           (file) 
-          ? <Table data={} /> : ""
+          ? table : ""
         }
       </div>
     </div>

@@ -12,7 +12,7 @@ export default class Table extends React.Component {
   }
   
   getKeys = function(){
-    return Object.keys(this.props.data.data[0]);
+    return Object.keys(this.props.data[0]);
   }
   
   getHeader = function(){
@@ -23,7 +23,7 @@ export default class Table extends React.Component {
   }
   
   getRowsData = function(){
-    var items = this.props.data.data;
+    var items = this.props.data;
     console.log(items[0])
     var keys = this.getKeys();
     return items.map((row, index)=>{
