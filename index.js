@@ -1,13 +1,15 @@
 import React, { Component, useState } from 'react';
 import { render } from 'react-dom';
 import Former from './Component/Form.js';
-import './static/css/style.css';
 import Table from './Component/Table';
+// Importng Datasets
 import * as XLK16 from './Data/XLK-16.json';
 import * as XLK17 from './Data/XLK-17.json';
 import * as FTEC17 from './Data/FTEC-17.json';
 import * as FTEC16 from './Data/FTEC-16.json';
 
+// StylesSheets
+import './static/css/style.css';
 const App = () => {
   const [startDate, setDate] = useState(new Date(2020, 3, 16));
   const [file, setFile] = useState("");
