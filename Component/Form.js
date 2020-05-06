@@ -18,6 +18,7 @@ function Former(props) {
   const [startDate, setDate] = useState(new Date(2020, 3, 16));
   const [stock, setStock] = useState("XLK");
 
+  // handling date change as well as checking if date lies between 16-17 as data provided has only that
   const changeDate = (date) => {
     let d1 = new Date(2020,3,16);
     let d2 = new Date(2020,3,17);
@@ -26,11 +27,12 @@ function Former(props) {
     }
   }
 
+  // Submit funtion to send state to parent to render 
   const submit = () => {
-    // console.log(props);
     props.submitFn(stock, startDate.getDate());
   }
 
+  // handler for select input method
   const select = (event) => {
     setStock(event.target.value);
   }
